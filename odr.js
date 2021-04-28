@@ -214,9 +214,9 @@ var arg = {
 p = JSON.parse("[" + dimgarray + "]");
 arg.Inputs.input1.Values.push(p);
 jQuery.ajax({
-url: "<https://ocrwebappzxc.azure-api.net/predict/evaluate>",
+url: "https://ocrwebappzxc.azure-api.net/predict/evaluate",
 beforeSend: function (xhrObj) {
-xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "<28f8943f12af4851afd2d68215cae523>");
+xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "28f8943f12af4851afd2d68215cae523");
 xhrObj.setRequestHeader("Content-Type",
 "application/json;charset=utf-8");
 }, false);
